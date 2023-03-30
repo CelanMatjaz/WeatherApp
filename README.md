@@ -1,4 +1,10 @@
-# Weather
+# Weather app
+
+A simple weather forecast app, showing forecasts for current day and the next 5 days. Data used is from https://open-meteo.com. Current limitation is that the timezone is hardcoded to be Europe/Berlin. The default latitude and longitude are for Maribor, Slovenia.
+
+## How to use
+
+Simply input the coordinates of the location you want and click the "Fetch data" button
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 

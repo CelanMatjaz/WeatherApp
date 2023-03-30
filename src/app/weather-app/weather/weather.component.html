@@ -1,0 +1,40 @@
+<form class="inputs grid" (ngSubmit)="submitCoords()">
+  <div class="row">
+    <div class="mb-3 col-6">
+      <label for="latitude" class="form-label">Latitude</label>
+      <input
+        [(ngModel)]="latitude"
+        name="latitude"
+        type="number"
+        class="form-control"
+        id="latitude"
+        placeholder="Latitude"
+      />
+    </div>
+    <div class="mb-3 col-6">
+      <label for="longitude" class="form-label">Longitude</label>
+      <input
+        [(ngModel)]="longitude"
+        name="longitude"
+        type="number"
+        class="form-control"
+        id="longitude"
+        placeholder="Longitude"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Fetch data</button>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="errorText !== ''" class="text-bg-danger p-3 rounded mt-3">
+  <div>There was an error fetching your data. Please try again.</div>
+  <div>
+    <span class="fw-bold">Reason</span>: {{ errorText }}
+  </div>
+</div>
+
+<app-weather-data></app-weather-data>

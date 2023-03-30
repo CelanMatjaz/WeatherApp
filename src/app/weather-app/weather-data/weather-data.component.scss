@@ -1,0 +1,8 @@
+.weather-data-card {
+    background-color: #007bff;
+    color: white;
+
+    &:hover {
+        background-color: lighten(#007bff, 8);
+    }
+}
